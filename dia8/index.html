@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1935d064dd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <main>
+        <section class="main-container">
+            <div class="instructions">
+                <div class="container">
+                    <h2 class="line">Instrucciones</h2>
+                    
+                    <p>Siga las instrucciones a continuación para obtener el enlace de su archivo de Google Drive</p>
+                    <hr>
+                    <ol type="1">
+                        <li><p>Open <a href="https://drive.google.com" target="_blank">Google Drive</a></p></li>
+                        <li>Haga clic derecho en un archivo.</li>
+                        <li>Seleccione "Obtener enlace" y haga clic en "Copiar enlace"</li>
+                        <li>Pegue el enlace aquí y haga clic en el botón "Generar enlace directo"</li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="download-link">
+                <div class="container">
+                    <h1>Generador de enlaces de descarga directa de Google</h1>
+                    <input type="radio" id="login" name="tab" checked>
+                    <input type="radio" id="register" name="tab">
+                    <input type="radio" id="reset" name="tab">
+                    <nav>
+                        <label for="login" class="login"><i class="fas fa-sign-in-alt"></i>Pegue el enlace</label>
+                        <label for="register" class="register"><i class="fas fa-headphones-alt"></i>Insertar audio</label>
+                        <label for="reset" class="reset"><i class="fas fa-photo-video"></i>Insertar video/documentos</label>
+                        <div class="slide"></div>
+                    </nav>
+        
+        
+                    <section>
+                        <div class="content content-link">
+                            <i class="fas fa-download"></i>
+                            <h2>Enlace de Google Drive</h2>
+                            <p>Pegue su enlace de archivo de Google Drive a continuación</p>
+                            <form action="">
+                                <label for="glink">
+                                    <i class="fab fa-google-drive"></i>
+                                    <input type="text" id="glink" class="glink" placeholder="Google Drive Link" autocomplete="off" required>
+                                </label>
+        
+                                <button class="btn" id="btn">Generar enlace de descarga directa</button>
+                                
+                                <div class="embed-code">
+                                    <hr class="m-y">
+                                    <h3>Enlace de descarga directa</h3>
+                                    <textarea name="" class="embed" id="download-link" cols="30" rows="10"></textarea>
+                                    <span class="copy">Copiar</span>
+                                </div>
+                                <hr>
+                            <button class="clear">Limpiar</button>     
+                            </form>
+                            
+                        </div>
+        
+                        <div class="content content-audio">
+                            <i class="fas fa-headphones-alt"></i>
+                            <h2>Enlace de inserción de audio</h2>
+                            <p>Si su enlace era un archivo de audio, use el fragmento de código para insertarlo en una página web.</p>
+                            <form action="">
+                                <div class="embed-code">
+                                    <hr class="m-y">
+                                    <h3>Enlace de inserción de audio</h3>
+                                    <textarea name="" class="embed" id="embed-audio" cols="30" rows="10"></textarea>
+                                    <span class="copy-audio">Copiar</span>
+                                </div>
+                            </form>
+                        </div>
+        
+                        <div class="content content-video">
+                            <i class="fas fa-photo-video"></i>
+                            <h2>Video/Doc Embed Link</h2>
+                            <p>If your link was an Video or Document, use the code snippet to embed it on a web page.</p>
+                            <form action="">
+                                <div class="embed-code">
+                                    <hr class="m-y">
+                                    <h3>Video/Document Embed link</h3>
+                                    <textarea name="" class="embed" id="embed-video" cols="30" rows="10"></textarea>
+                                    <span class="copy-video">Copy</span>
+                                </div>
+        
+                            </form>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
